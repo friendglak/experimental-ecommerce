@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
-import "./globals.css";
 import { cn } from "@/lib/utils";
+import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Providers from "@/components/Providers";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -23,8 +24,10 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className={cn("relative h-full antialiased", raleway.className)}>
         <main className="realtive flex flex-col min-h-screen">
-          <Navbar />
-          <div className="flex-grow flex-1">{children}</div>
+          <Providers>
+            <Navbar />
+            <div className="flex-grow flex-1">{children}</div>
+          </Providers>
         </main>
       </body>
     </html>
