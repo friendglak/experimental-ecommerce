@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "digitalhippo-production.up.railway.app",
+        hostname: "experimental-ecommerce-production.up.railway.app",
       },
     ],
   },
