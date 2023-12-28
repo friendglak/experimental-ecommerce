@@ -48,7 +48,7 @@ export const paymentRouter = router({
       });
 
       line_items.push({
-        price: "price_1OCeBwA19umTXGu8s4p2G3aX",
+        price: "price_1OOgUYHcfJXYpK8F6xuRh44I",
         quantity: 1,
         adjustable_quantity: {
           enabled: false,
@@ -70,6 +70,7 @@ export const paymentRouter = router({
 
         return { url: stripeSession.url };
       } catch (err) {
+        console.log(err);
         return { url: null };
       }
     }),

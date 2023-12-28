@@ -27,7 +27,7 @@ export function formatPrice(
 
 export function constructMetadata({
   title = "Experimental - the marketplace for experimental clothes.",
-  description = "Experimental is an ",
+  description = "Experimental is an ecommerce",
   image = "/thumbnail.png",
   icons = "/favicon.ico",
   noIndex = false,
